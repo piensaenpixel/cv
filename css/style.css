@@ -65,3 +65,30 @@ table {
 
 .section {
   padding: 80px; }
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .home h1 {
+    font: italic 700 64px/90px 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    margin-bottom: 16px; }
+    .home h1 span {
+      position: relative; }
+      .home h1 span:before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        right: -16px;
+        bottom: -8px;
+        left: -16px;
+        background: #F8E71C;
+        z-index: -1;
+        -webkit-transform: skew(-6deg);
+                transform: skew(-6deg); }
+  .home p {
+    font: italic 400 20px/32px 'Cormorant Garamond', serif; }
