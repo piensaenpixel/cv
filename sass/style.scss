@@ -1,0 +1,18 @@
+@import 'reset';
+@import 'base';
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-auto-rows: 100vh;
+  border: 20px solid #f9f9f9;
+  height: 100vh;
+  overflow: auto;
+}
+
+.section {
+  padding: 80px;
+}
