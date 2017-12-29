@@ -11,11 +11,14 @@
   grid-auto-rows: 100vh;
   border: 20px solid #f9f9f9;
   height: 100vh;
-  overflow: auto;
+  overflow: auto
 }
-
 .section {
   padding: 80px;
+}
+.is-fixed {
+  position: fixed;
+  top: 80px;
 }
 
 .home {

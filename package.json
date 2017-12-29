@@ -10,6 +10,10 @@
     "grunt-contrib-sass": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
-    "grunt-postcss": "^0.9.0"
+    "grunt-postcss": "^0.9.0",
+    "grunt-serve": "^0.1.6"
+  },
+  "dependencies": {
+    "grunt-reload": "^0.2.0"
   }
 }

@@ -66,6 +66,10 @@ table {
 .section {
   padding: 80px; }
 
+.is-fixed {
+  position: fixed;
+  top: 80px; }
+
 .home {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -3,6 +3,7 @@
 <head>
   <title>Emilio García - CV</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i, 600, 600i, 700|Roboto:300,400" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -15,9 +16,27 @@
       </div>
     </section>
     <section class="section">
-      hola
+      hola que tal
     </section>
   </div>
+  <script>
+      $(function() {
+          var $window = $('.container');
+          var header = $('.js-header');
+          var height = 225;
+          $window.scroll(function() {
+              var scroll = $($window).scrollTop();
+              if (scroll >= height) {
+                  $(header).addClass("is-fixed");
+              } else {
+                  $(header).removeClass("is-fixed");
+              }
+              console.log(scroll);
+              console.log(height);
+          });
+      });
+
+  </script>
 
 </body>
 </html>

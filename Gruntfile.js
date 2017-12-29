@@ -51,12 +51,23 @@ module.exports = function (grunt) {
     watch: { // Compile everything into one task with Watch Plugin
       css: {
         files: '**/*.scss',
-        tasks: ['sass', 'postcss', 'cssmin']
+        tasks: ['sass', 'postcss', 'cssmin', 'default', 'reload']
       },
       js: {
         files: '**/*.js',
         tasks: ['uglify']
       }
+    },
+    reload: {
+        port: 9000,
+        proxy: {
+            host: 'localhost'
+        }
+    },
+    serve: {
+        options: {
+            port: 9000
+        }
     }
   });
   // Load Grunt plugins
@@ -65,7 +76,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-serve');
+  grunt.loadNpmTasks('grunt-reload');
 
   // Register Grunt tasks
+
   grunt.registerTask('default', ['watch']);
 };
