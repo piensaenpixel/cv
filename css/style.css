@@ -233,7 +233,7 @@ body {
 /* mobile */
 @media (max-width: 600px) {
     .container {
-        padding: 30px;
+        padding: 20px;
     }
 
     .title {
@@ -249,7 +249,7 @@ body {
         font-size: 14px;
     }
     .section--detail {
-        padding: 0 30px;
+        padding: 0 20px;
     }
     .header-container.is-active .title {
         opacity: 0;
@@ -264,16 +264,16 @@ body {
     }
 
     .section--detail.is-active {
-        transform: translateY(calc(-100% + 40px));
+        transform: translateY(calc(-100% + 30px));
     }
     .section--detailContact.is-active {
-        transform: translateY(calc(-200% + 40px));
+        transform: translateY(calc(-200% + 30px));
     }
     .section--detailPhoto.is-active {
-        transform: translateY(calc(-300% + 40px));
+        transform: translateY(calc(-300% + 30px));
     }
     .section--detailCV.is-active {
-        transform: translateY(calc(-400% + 40px));
+        transform: translateY(calc(-400% + 30px));
     }
     .ps__rail-y {
         display: none !important;
@@ -286,12 +286,12 @@ body {
             margin-bottom: 10px;
         }
         .works img {
-            width: calc(100% + 60px);
-            margin: 0 -30px;
+            width: calc(100% + 40px);
+            margin: 0 -20px;
         }
 
     .masonry-container {
-        margin: 0 -30px;
+        margin: 0 -20px;
         padding: 0;
     }
     .masonry {
