@@ -299,7 +299,7 @@ body {
     }
 
     .menu-itemLink:hover:after {
-      display: none;
+      opacity: 0;
     }
 
 }
