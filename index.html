@@ -11,7 +11,7 @@
   <link href="css/perfect-scrollbar.css" rel="stylesheet">
   <script src="js/perfect-scrollbar.min.js"></script>
 </head>
-<body class="no-touch">
+<body">
   <div class="inner">
     <section class="container">
       <header class="header">
@@ -172,64 +172,6 @@
       </ul>
     </section>
   </div>
-
-  <script>
-    var els = document.querySelectorAll(".js-menu-itemLink");
-    var header = document.querySelector(".header-container");
-    var section = document.querySelectorAll(".section--detail");
-    var navigation = document.querySelectorAll(".js-menu-itemLink");
-
-    els.forEach(function (element){
-      element.addEventListener("click", function(){
-        header.classList.add('is-active')
-
-        section.forEach(function(e) {
-          e.classList.remove('is-active')
-        });
-
-        document.querySelector('#'+this.dataset.href).classList.add('is-active')
-
-        navigation.forEach(function(e) {
-          e.classList.remove('is-active')
-        });
-        this.classList.add('is-active')
-      });
-    });
-
-
-    var ps = new PerfectScrollbar('.js-scroll',{
-      maxScrollbarLength: 100
-    });
-    var ps = new PerfectScrollbar('.section--detailCV',{
-      maxScrollbarLength: 100
-    });
-    var ps = new PerfectScrollbar('.section--detailPhoto',{
-      maxScrollbarLength: 100
-    });
-
-    function removeHoverCSSRule() {
-      if ('createTouch' in document) {
-        try {
-          var ignore = /:hover/;
-          for (var i = 0; i < document.styleSheets.length; i++) {
-            var sheet = document.styleSheets[i];
-            if (!sheet.cssRules) {
-              continue;
-            }
-            for (var j = sheet.cssRules.length - 1; j >= 0; j--) {
-              var rule = sheet.cssRules[j];
-              if (rule.type === CSSRule.STYLE_RULE && ignore.test(rule.selectorText)) {
-                sheet.deleteRule(j);
-              }
-            }
-          }
-        }
-        catch(e) {
-        }
-      }
-    }
-
-  </script>
-
+  <script src="js/app.js"></script>
 </body>
 </html>

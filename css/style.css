@@ -127,7 +127,6 @@ body {
 
 /* CV */
 .cv {
-    height: 100%;
     margin-left: 2px;
     position: relative;
 }
@@ -249,7 +248,7 @@ body {
         font-size: 14px;
     }
     .section--detail {
-        padding: 0 20px;
+        padding: 0 20px 60px 20px;
     }
     .header-container.is-active .title {
         opacity: 0;
