@@ -16,6 +16,10 @@ body {
     font: 56px/78px AvantGarde;
     color: #000;
 }
+    .title:after {
+        content: '.';
+        color: #F42272;
+    }
 .subtitle {
     font: 26px/36px 'Karla';
     color: #232E21;
@@ -231,10 +235,12 @@ body {
     .container {
         padding: 30px;
     }
+
     .title {
         font-size: 38px;
         line-height: 1.4;
     }
+
     .subtitle {
         font-size: 22px;
         line-height: 1.4;
@@ -290,6 +296,10 @@ body {
     }
     .masonry {
         column-count: 2;
+    }
+
+    .menu-itemLink:hover:after {
+      display: none;
     }
 
 }
