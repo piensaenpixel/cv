@@ -298,8 +298,4 @@ body {
         column-count: 2;
     }
 
-    .menu-itemLink:hover:after {
-      opacity: 0;
-    }
-
 }
