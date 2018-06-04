@@ -216,9 +216,32 @@ body {
         color: #304450;
         margin: 0 0 12px 0;
     }
-    .works img {
-        width: 50%;
+    .works-item img {
+        max-width: 720px;
     }
+
+
+.links {
+    margin-top: 32px;
+    margin-left: -2px;
+}
+    .links-item {
+        margin-bottom: 16px;
+        font: 16px/22px 'Karla';
+    }
+        .links-item:last-child {
+            margin-bottom: 0;
+        }
+        .links-item a {
+            color: #F42272;
+            position: relative;
+            padding: 0 2px;
+        }
+            .links-item a:hover{
+                background: #F42272;
+                color: #fff;
+            }   
+
 
 /* reset scroll */
 .ps__rail-y {
